@@ -1,74 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TriplL</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
-    <link  rel="stylesheet" href="font/fontawesome-free-6.5.1-web/css/all.min.css" />
-    <link rel="stylesheet" href="boostrap/bootstrap-5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TriplL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Space+Grotesk:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="font/fontawesome-free-6.5.1-web/css/all.min.css" />
+  <link rel="stylesheet" href="boostrap/bootstrap-5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <nav class="w-full navbar navbar-expand-lg navbar-light bg-white" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/triplilogo.png" width="70"/>
-                </a>
-                <button class="d-lg-none menubar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                </button>
+  <!-- Navbar -->
+  <nav class="w-full navbar navbar-expand-lg navbar-light bg-white" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="assets/triplilogo.png" />
+        </a>
+        <button class="d-lg-none menubar" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
+
+        <div class="d-flex justify-content-center justify-content-sm">
+          <ul class="navbar-nav mb-2 mb-lg-0 pe-3">
+            <li class="nav-item mt-3 mb-3 mt-lg-0 mb-lg-0">
+              <a class="nav-link nav-linkcolor" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mb-3 mb-lg-0">
+              <a class="nav-link text-nowrap nav-linkcolor text-sm" href="#">About Us</a>
+            </li>
+
+            <li class="nav-item mb-3 mb-lg-0">
+              <a class="nav-link nav-linkcolor" href="#">
+                Support
+              </a>
+            </li>
+            <li class="nav-item mb-3 mb-lg-0">
+              <a class="nav-link nav-linkcolor" href="#">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Herosection-->
+  <div class="herosectionImage mb-5">
+
+    <div class="herosectionchild">
+      <h3 class="text-white fw-bolder herocontent-headingThree mb-3">Your Destination, Our Drive!</h3>
+
+      <p class="text-white herocontent-ptag mb-4">TripLl: Your all-in-one mobility solution. Ride comfortably with
+        top-rated drivers or breeze through traffic with our leading scooters.</p>
+
+      <button class="getApp">Get the App</button>
+    </div>
+  </div>
+
+  <!-- Earn while you drive Section-->
+  <div class="container mb-5">
+
+    <div class="d-flex justify-content-center mb-2">
+      <h2 class="earningtext">Earn while you drive</h2>
+    </div>
+
+    <!-- This div has a background that is half green and half black -->
+    <div class="d-flex justify-content-center">
+      <span class="earn-borderline mb-5"></span>
+    </div>
+
+
+    <div class="earnchildOne">
+      <div class="earningImage">
+        <img src="assets/taxi-driver.png" />
+      </div>
+      <div>
+
+        <div>
+          <h3 class="driveEarntext mb-3">Drive and earn money</h3>
+
+          <div>
+            <div class="d-flex gap-3 mb-2">
+              <span class="earningNumbering">1</span>
+              <span class="drivemoretext"> Drive more, earn more</span>
             </div>
 
-          <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
-           
-            <div class="d-flex justify-content-center justify-content-sm">
-                <ul class="navbar-nav mb-2 mb-lg-0 pe-3">
-                    <li class="nav-item mt-3 mb-3 mt-lg-0 mb-lg-0">
-                      <a class="nav-link nav-linkcolor" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item mb-3 mb-lg-0">
-                      <a class="nav-link text-nowrap nav-linkcolor text-sm" href="#">About Us</a>
-                    </li>
-                    
-                    <li class="nav-item mb-3 mb-lg-0">
-                      <a class="nav-link nav-linkcolor" href="#" >
-                        Support
-                      </a>
-                    </li>
-                    <li class="nav-item mb-3 mb-lg-0">
-                      <a class="nav-link nav-linkcolor" href="#">FAQs</a>
-                    </li>
-                  </ul>
-            </div>
+
+            <p>When you join our platform,
+              you'll receive numerous
+              ride requests from our customers.</p>
           </div>
         </div>
-      </nav>
-    
 
-    <!-- Herosection-->
-    <div class="herosectionImage">
 
-       <div class="herosectionchild">
-            <h3 class="text-white fw-bolder herocontent-headingThree mb-3">Your Destination,  Our Drive!</h3>
 
-            <p class="text-white herocontent-ptag mb-4">TripLl: Your all-in-one mobility solution.  Ride comfortably with top-rated drivers or breeze through traffic with our leading scooters.</p>
-            
-            <button class="getApp">Get the App</button>
-       </div>
+
+
+        <div>
+          <div class="d-flex gap-3 mb-2">
+            <span class="earningNumbering">2</span>
+            <span class="drivemoretext"> Drive more, earn more</span>
+          </div>
+
+
+          <p>When you join our platform,
+            you'll receive numerous
+            ride requests from our customers.</p>
+        </div>
+
+        <div class="d-flex justify-content-center mb-2">
+          <button class="learnmore">Learn More</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--About Us  -->
+  <div class="container aboutus-container">
+    <div class="d-flex justify-content-center">
+      <h3 class="aboutus-text">About Us</h3>
     </div>
 
-    <!-- Earn while you drive Section-->
-    <div>
-        
+
+    <!-- This div has a background that is half black and half red -->
+    <div class="d-flex justify-content-center">
+      <span class="aboutus-borderline mb-5"></span>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="boostrap/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="aboutus-missions">
+      <!-- our vision -->
+      <div class="d-flex justify-content-center align-items-center flex-column mt-3">
+        <div class="ourvision-icon">
+          <img src="assets/vision_icon.png" />
+        </div>
+
+
+        <!-- visonbody -->
+        <div class="">
+
+          <div class="d-flex justify-content-center align-items-center ourvisionheading-text">
+            <h2>Our Vision</h2>
+          </div>
+
+          <div>
+            <span class="d-flex justify-content-center align-items-center ourvisiontitle-text">A world of extraordinary
+              journeys</span>
+          </div>
+
+
+          <div class="ourvision-paragraph">
+            <p>
+              Our vision is clear: we aspire to
+              create a world where every
+              trip leaves an indelible mark.
+              We believe in the power of remarkable partnerships and innovation to redefine the way
+              people move and connect.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- our mission -->
+      <div class="d-flex justify-content-center align-items-center flex-column mt-3">
+
+        <div class="ourmission-icon">
+          <img src="assets/mision_icon.png" />
+        </div>
+
+
+        <!-- visonbody -->
+        <div class="">
+
+          <div class="d-flex justify-content-center align-items-center flex-column ourvisionheading-text">
+            <h2>Our Mission</h2>
+          </div>
+
+          <div>
+            <span class="d-flex justify-content-center align-items-center ourvisiontitle-text">Redefining mobility
+              and connectivity</span>
+          </div>
+
+
+          <div class="ourmission-paragraph">
+            <p>
+              Our mission is to make every
+              journey extraordinary and
+              every connection remarkable.
+              We're dedicated to developing solutions that enhance the way people travel and interact with
+              their communities.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- core values -->
+      <div class="d-flex justify-content-center align-items-center flex-column mt-5">
+
+        <div class=" corevalues-icon">
+          <img src="assets/core_values_icon.png" />
+        </div>
+
+
+        <!-- visonbody -->
+        <div class="d-flex justify-content-center align-items-center flex-column">
+
+          <div class="ourvisionheading-text">
+            <h2>Core Values</h2>
+          </div>
+
+          <div>
+            <span class="d-flex justify-content-center align-items-center ourvisiontitle-text">Core Values: Excellence, Innovation, Community</span>
+          </div>
+
+
+          <div class="corevalues-paragraph">
+            <p>
+              Our core values drive our commitment to excellence, innovation, and community
+              building. These values
+              underpin every aspect of
+              TripLI's operations.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="boostrap/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

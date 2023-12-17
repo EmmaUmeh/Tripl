@@ -16,11 +16,17 @@ button{
 background-color: transparent;
 }
 
-.menubar{
-    font-size: 35px;
-
+img {
+    width: 100%;
 }
 
+.menubar{
+    font-size: 35px;
+}
+
+.navbar-brand{
+    width: 15%;
+}
 /* Use a more specific selector to target the button */
 
 .nav-linkcolor{
@@ -65,9 +71,179 @@ font-weight: 900;
     font-weight: 700;
 }
 
+.earningtext{
+    color: #122754;
+font-size: 50px;
+font-weight: 700;
+}
+
+.earnchildOne {
+    display: flex;
+    grid-column-gap: 140px; /* Adjust the value based on your design needs */
+}
+
+.earningImage{
+    width: 40%;
+}
+
+.driveEarntext{
+    color: #122754;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.earn-borderline{
+
+    width: 27%;
+    height: 7px;
+    background: linear-gradient(90deg, #00DB7F 50%, #122754 50%);
+    color: white;
+}
+
+.earningNumbering{
+    padding: 1px 1px 1px 1px;
+    width: 25px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+height: 25px;
+border-radius: 50%;
+background-color: #00DB7F;
+}
+
+.learnmore{
+    border-radius: 50px;
+    background-color: #EDEDED;
+    padding: 5px 12px 5px 12px;
+    color: #122754;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.drivemoretext{
+    color: #122754;
+    font-weight: 800;
+}
+
+/* About Us */
+
+.aboutus-container{
+    padding-top: 70px;
+    margin-bottom: 20px;
+}
+
+.aboutus-text{
+    color: #122754;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.aboutus-borderline{
+
+    width: 9%;
+    height: 7px;
+    background: linear-gradient(90deg, #00DB7F 50%, #122754 50%);
+    color: white;
+}
+
+.aboutus-missions{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+
+.ourvision-icon{
+    background-color: #00DB7F;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+width: 30%;
+margin-bottom: 18px;
+}
+
+
+.ourmission-icon{
+    background-color: #00DB7F;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+width: 30%;
+margin-bottom: 20px;
+}
+
+.corevalues-icon{
+    background-color: #00DB7F;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+width: 40%;
+margin-bottom: 20px;
+/* margin-bottom: 18px; */
+}
+
+
+.ourvisionheading-text h2{
+    color: #122754;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+
+.ourvisiontitle-text{
+    color: #122754;
+    font-weight: 800;
+    font-size: 18px;
+
+}
+
+
+.ourvision-paragraph {
+    margin-top: 20px;
+    display: flex;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.ourmission-paragraph{
+    margin-top: 20px;
+    display: flex;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.ourmission-paragraph p {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corevalues-paragraph{
+    margin-top: 20px;
+    display: flex;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.corevalues-paragraph p{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.ourvision-paragraph p{
+    width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 /* Media Queries */
 /* Small Screen */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 100px) and (max-width: 767px) {
     .herosectionchild {
         padding: 5rem 0rem 6rem 3rem;
     }
@@ -81,6 +257,34 @@ font-weight: 900;
     .herocontent-ptag{
         width: 100%;
         font-weight: 600;
+    }
+
+    .earnchildOne{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .earningtext{
+    font-size: 35px;
+    }
+
+    .earningImage{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .aboutus-missions{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .corevalues-icon{
+    width: 30%;
+ 
     }
  }
 
@@ -100,4 +304,28 @@ font-weight: 900;
         width: 100%;
         font-weight: 600;
     }
+
+    .earnchildOne{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .earningImage{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    
+    .aboutus-missions{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .corevalues-icon{
+        width: 30%;
+     
+        }
  }

@@ -10,6 +10,16 @@ body{
     line-height: 25px;
 }
 
+input {
+ outline: none;
+border: none;
+}
+
+textarea{ 
+    outline: none;
+    border: none; 
+}
+
 button{
     border: none;
     outline: none;
@@ -285,6 +295,62 @@ margin-bottom: 40px;
    margin-top: -150px;
 }
 
+
+/* Contact */
+.contact-container{
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.contact-form input{
+    background-color: #F5F4F4;
+    border-radius: 20px;
+    padding: 20px 250px 20px 20px;
+    border:  1px solid #F5F4F4;
+    
+}
+
+
+.contact-form textarea{
+    background-color: #F5F4F4;
+    border-radius: 20px;
+    padding: 20px 40px 180px 20px;
+    border:  1px solid #F5F4F4;
+}
+
+.form-container{
+    gap: 80px;
+}
+
+.messageicons_container{
+    padding-top: 120px;
+}
+
+.form-control:focus{
+border:  1px solid #F5F4F4;
+}
+
+.contact-button{
+    border-radius: 10px;
+    background-color: #00DB7F;
+    padding: 12px 12px 12px 12px;
+    color: white;
+    font-weight: 700;  
+}
+.call_line{
+    margin-bottom: 34px;
+}
+
+.call_line img{
+width: 9%;
+}
+
+.mail_box img{
+width: 10%;
+}
+
+
+/* .form-control: */
 /* Media Queries */
 /* Small Screen */
 @media (min-width: 100px) and (max-width: 767px) {
@@ -363,6 +429,20 @@ margin-bottom: 40px;
         padding-left: 5px;
         border-radius: 0px;
     }
+
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .call_line{
+        width: 50%;
+    }
+
+    .mail_box {
+        width: 50%;
+    }
  }
 
  /* Meduim Screen */
@@ -432,5 +512,18 @@ margin-bottom: 40px;
     
         .sectiondownload{
             border-radius: 90px;
+        }
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .call_line{
+            width: 50%;
+        }
+    
+        .mail_box {
+            width: 50%;
         }
  }

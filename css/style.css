@@ -394,8 +394,9 @@ width: 10%;
 
     .earningtext{
     font-size: 38px;
-    text-align: center;
-    width: 60%;
+    /* text-align: center; */
+    /* width: 60%; */
+    padding-left: 10px;
     }
 
     .earningImage{

@@ -412,6 +412,11 @@ display: flex;
     font-weight: 700;
     margin-top: -30px;
 }
+
+.footerchildThree{
+    display: flex;
+    gap: 180px;
+}
 /* Media Queries */
 /* Small Screen */
 @media (min-width: 100px) and (max-width: 767px) {
@@ -540,7 +545,7 @@ display: flex;
         }
     .footer-logo {
         margin-bottom: 5px;
-        width: 18%;
+        width: 38%;
     }
 
     .footersubscribe-text h2{
@@ -565,6 +570,25 @@ display: flex;
     .footer-ptag{
         display: flex;
         text-align: center;
+    }
+
+    .footerchildThree{
+        gap: 50px;
+    }
+    .quicklinks h3{
+        font-size: 16px;
+    }
+
+    .quicklinks span{
+        font-size: 14px;
+    }
+
+    .legal h3{
+        font-size: 16px;
+    }
+
+    .legal span{
+        font-size: 14px;
     }
  }
 

@@ -289,12 +289,12 @@ margin-bottom: 40px;
 /* Small Screen */
 @media (min-width: 100px) and (max-width: 767px) {
     .herosectionchild {
-        padding: 5rem 2rem 6rem 3rem;
+        padding: 5rem 8rem 6rem 3rem;
     }
 
     .herocontent-headingThree {
         width: 90%;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 900;
     }
 

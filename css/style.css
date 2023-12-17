@@ -526,6 +526,7 @@ display: flex;
     }
     .footer{
         padding-top: 10px;
+        
     }
 
         .footer-contents{
@@ -533,10 +534,12 @@ display: flex;
         }
     .footer-logo {
         margin-bottom: 5px;
+        width: 18%;
     }
 
-    .footersubscribe-text{
-        
+    .footersubscribe-text h2{
+        /* width: 100%; */
+        font-size: 20px;
     }
  }
 

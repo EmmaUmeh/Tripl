@@ -182,6 +182,12 @@ width: 30%;
 margin-bottom: 20px;
 }
 
+.ourmissiontitle-text{
+    color: #122754;
+    font-weight: 800;
+    font-size: 18px;
+}
+
 .corevalues-icon{
     background-color: #00DB7F;
     padding: 20px 20px 20px 20px;
@@ -203,8 +209,10 @@ margin-bottom: 20px;
     color: #122754;
     font-weight: 800;
     font-size: 18px;
+    text-align: center;
 
 }
+
 
 
 .ourvision-paragraph {
@@ -356,6 +364,12 @@ width: 10%;
 /* Media Queries */
 /* Small Screen */
 @media (min-width: 100px) and (max-width: 767px) {
+
+    .navbar-brand{
+        width: 25%;
+    }
+
+
     .herosectionchild {
         padding: 5rem 4rem 6rem 3rem;
     }
@@ -447,15 +461,24 @@ width: 10%;
     }
     
     .contact-form input{
-
-       
         padding: 20px 20px 20px 20px;
-     
+    }
+
+    .ourmissiontitle-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* width: 100%; */
     }
  }
 
  /* Meduim Screen */
  @media (min-width: 768px)  and (max-width: 1023px) { 
+
+    .navbar-brand{
+        width: 20%;
+    }
     .herosectionchild {
         padding: 5rem 0rem 6rem 3rem;
     }

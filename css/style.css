@@ -241,11 +241,55 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
+
+.sectiondownload{
+    background-color: #122754;
+    color: white;
+    padding: 40px 5px 5px 5px;
+    border-radius: 90px;
+    margin-bottom: 50px;
+    margin-top: 190px;
+}
+
+.sectiondownload h2{
+    font-weight: 800;
+    width: 90%;
+    font-size: 62px;
+    margin-bottom: 20px;
+}
+
+.sectiondownload button{
+    border-radius: 50px;
+    background-color: white;
+    padding: 4px 14px 4px 14px;
+    color: #122754;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.sectiondownload p{
+    font-size: 25px;
+font-weight: 500;
+width: 50%;
+line-height: normal;
+margin-bottom: 40px;
+}
+
+.sectiondownloadchild{
+    padding-top: 80px;
+}
+
+.sectiondownloadImage{
+    width: 50%;
+   margin-top: -150px;
+}
+
 /* Media Queries */
 /* Small Screen */
 @media (min-width: 100px) and (max-width: 767px) {
     .herosectionchild {
-        padding: 5rem 0rem 6rem 3rem;
+        padding: 5rem 2rem 6rem 3rem;
     }
 
     .herocontent-headingThree {
@@ -285,6 +329,39 @@ align-items: center;
     .corevalues-icon{
     width: 30%;
  
+    }
+
+    .sectiondownloadImage{
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+
+    .sectiondownloadchild{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sectiondownload p{
+        display: flex;
+        width: 90%;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+
+    .sectiondownload h2{
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .sectiondownload{
+        border-radius: 90px;
+    }
+
+    .sectiondownload{
+        margin-top: 70px;
+        padding-left: 5px;
+        border-radius: 0px;
     }
  }
 
@@ -327,5 +404,33 @@ align-items: center;
     .corevalues-icon{
         width: 30%;
      
+        }
+
+        
+        .sectiondownloadImage{
+            padding-top: 50px;
+            /* margin-top: 0px; */
+        }
+    
+        .sectiondownloadchild{
+            width: 70%;
+            padding: 10px;
+            /* justify-content: center; */
+        }
+    
+        .sectiondownload p{
+            display: flex;
+            width: 90%;
+            /* flex-direction: column; */
+            justify-content: center;
+        }
+    
+        .sectiondownload h2{
+            width: 100%;
+            font-size: 50px;
+        }
+    
+        .sectiondownload{
+            border-radius: 90px;
         }
  }

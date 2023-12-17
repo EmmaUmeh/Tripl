@@ -393,7 +393,9 @@ width: 10%;
     }
 
     .earningtext{
-    font-size: 35px;
+    font-size: 30px;
+    text-align: center;
+    width: 60%;
     }
 
     .earningImage{

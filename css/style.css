@@ -404,6 +404,7 @@ display: flex;
     gap: 90px;
 }
 
+
 .subscribe-button{
     border-radius: 10px;
     background-color: #00DB7F;
@@ -417,6 +418,21 @@ display: flex;
     display: flex;
     gap: 180px;
 }
+
+#map {
+    height: 300px;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  
+  .contactside{
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+
 /* Media Queries */
 /* Small Screen */
 @media (min-width: 100px) and (max-width: 767px) {
@@ -590,6 +606,7 @@ display: flex;
     .legal span{
         font-size: 14px;
     }
+
  }
 
  /* Meduim Screen */

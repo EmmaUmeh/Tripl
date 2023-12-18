@@ -607,6 +607,11 @@ display: flex;
         font-size: 14px;
     }
 
+    .phoneNumber{
+        display: flex;
+        flex-direction: column;
+        
+    }
  }
 
  /* Meduim Screen */

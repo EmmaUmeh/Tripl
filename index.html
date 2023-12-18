@@ -13,6 +13,14 @@
   <link rel="stylesheet" href="font/fontawesome-free-6.5.1-web/css/all.min.css" />
   <link rel="stylesheet" href="boostrap/bootstrap-5.3.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    /* Add a class for the initial state of animated elements */
+    .initial-state {
+      opacity: 0;
+      transform: translateY(10px); /* Adjust as needed */
+    }
+  </style>
 </head>
 
 <body>
@@ -61,35 +69,36 @@
   <div class="herosectionImage mb-5">
 
     <div class="herosectionchild">
-      <h3 class="text-white fw-bolder herocontent-headingThree mb-3">Your Destination, Our Drive!</h3>
+      <h3 class="text-white fw-bolder herocontent-headingThree mb-3 animate__animated animate__backInLeft animate__delay-0.2s">Your Destination, Our Drive!</h3>
 
-      <p class="text-white herocontent-ptag mb-4">TripLl: Your all-in-one mobility solution. Ride comfortably with
+      <p class="text-white herocontent-ptag mb-4 animate__animated animate__backInLeft animate__delay-1s">TripLl: Your all-in-one mobility solution. Ride comfortably with
         top-rated drivers or breeze through traffic with our leading scooters.</p>
 
-      <button class="getApp">Get the App</button>
+      <button class="getApp animate__animated animate__backInLeft animate__delay-2s">Get the App</button>
     </div>
   </div>
 
   <!-- Earn while you drive Section-->
   <div class="container mb-5">
 
-    <div class="d-flex justify-content-center mb-2">
+    <div class="d-flex justify-content-center mb-2 animate__animated animate__backInDown initial-state">
       <h2 class="earningtext">Earn while you drive</h2>
     </div>
 
     <!-- This div has a background that is half green and half black -->
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center animate__animated animate__backInLeft initial-state">
       <span class="earn-borderline mb-5"></span>
     </div>
 
 
-    <div class="earnchildOne">
-      <div class="earningImage">
+    <div class="earnchildOne ">
+      <div class="earningImage animate__animated animate__backInLeft initial-state">
         <img src="assets/taxi-driver.png" />
       </div>
-      <div>
 
-        <div>
+
+      <div class="animate__animated animate__backInLeft">
+        <div class="">
           <h3 class="driveEarntext mb-3">Drive and earn money</h3>
 
           <div>
@@ -132,27 +141,27 @@
 
 
   <!--About Us  -->
-  <div class="container aboutus-container">
-    <div class="d-flex justify-content-center">
-      <h3 class="aboutus-text">About Us</h3>
+  <div class="container aboutus-container ">
+    <div class="d-flex justify-content-center animate__animated animate__backInDown initial-state">
+      <h3 class="aboutus-text ">About Us</h3>
     </div>
 
 
     <!-- This div has a background that is half black and half red -->
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center animate__animated animate__backInLeft">
       <span class="aboutus-borderline mb-5"></span>
     </div>
 
-    <div class="aboutus-missions">
+    <div class="aboutus-missions ">
       <!-- our vision -->
       <div class="d-flex justify-content-center align-items-center flex-column mt-3">
-        <div class="ourvision-icon">
+        <div class="ourvision-icon animate__animated animate__backInDown">
           <img src="assets/vision_icon.png" />
         </div>
 
 
         <!-- visonbody -->
-        <div class="">
+        <div class="animate__animated animate__backInUp">
 
           <div class="d-flex justify-content-center align-items-center ourvisionheading-text">
             <h2>Our Vision</h2>
@@ -180,13 +189,13 @@
       <!-- our mission -->
       <div class="d-flex justify-content-center align-items-center flex-column mt-3">
 
-        <div class="ourmission-icon">
+        <div class="ourmission-icon animate__animated animate__backInDown">
           <img src="assets/mision_icon.png" />
         </div>
 
 
         <!-- visonbody -->
-        <div class="">
+        <div class=" animate__animated animate__backInUp">
 
           <div class="d-flex justify-content-center align-items-center flex-column ourvisionheading-text">
             <h2>Our Mission</h2>
@@ -215,13 +224,13 @@
       <!-- core values -->
       <div class="d-flex justify-content-center align-items-center flex-column mt-5">
 
-        <div class=" corevalues-icon">
+        <div class="corevalues-icon animate__animated animate__backInDown">
           <img src="assets/core_values_icon.png" />
         </div>
 
 
         <!-- visonbody -->
-        <div class="d-flex justify-content-center align-items-center flex-column">
+        <div class="d-flex justify-content-center align-items-center flex-column animate__animated animate__backInUp">
 
           <div class="ourvisionheading-text">
             <h2>Core Values</h2>
@@ -248,17 +257,17 @@
 
 
     <!-- sectiondownloadApp -->
-    <div class="sectiondownload">
+    <div class="sectiondownload ">
 
     <div class="container d-flex flex-column flex-md-row align-items-center">
 
-          <div class="sectiondownloadchild">
+          <div class="sectiondownloadchild initial-state">
               <h2>Seamless Journeys, One Tap Away</h2>
               <p>Compatible with Android and iOS for seamless use.</p>
               <button>Download App</button>
           </div>
 
-          <div class="sectiondownloadImage">
+          <div class="sectiondownloadImage animate__animated animate__backInDown initial-state">
               <img src="assets/triple_holding_phone.png"/>
           </div>
     </div>
@@ -269,19 +278,19 @@
     <!-- Contact-->
     <div class="contact-container">
         <div class="container">
-              <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-center animate__animated animate__backInDown">
                 <h3 class="aboutus-text">Get In Touch</h3>
               </div>
           
           
               <!-- This div has a background that is half black and half red -->
-              <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-center animate__animated animate__backInLeft">
                 <span class="aboutus-borderline mb-5"></span>
               </div>
       
             <!--  -->
            <div class="d-flex form-container">
-            <div>
+            <div class="animate__animated animate__backInLeft">
               <div class="contact-form d-flex flex-column gap-5">
                 <input type="text" class="form-input" placeholder="First Name Last_Name"/>
                 <input type="text" class="form-input" placeholder="Email Address"/>
@@ -293,7 +302,7 @@
 
          <!-- reach out to us icon -->
        
-            <div class="contactside">
+            <div class="contactside animate__animated animate__backInDown">
 
                     <div class="messageicons_container">
                       <div class="d-flex align-items-center gap-3 call_line">
@@ -386,11 +395,41 @@
     </div>
 
 
-
   <!-- Bootstrap JS -->
+  <script>
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
 
+    // Function to handle scroll events
+    function handleScroll() {
+      var elements = document.querySelectorAll('.initial-state');
+      elements.forEach(function (element) {
+        if (isInViewport(element)) {
+          element.classList.add('animate__animated', 'animate__backInLeft');
+          element.classList.remove('initial-state');
+        }
+      });
+    }
+
+    // Attach the handleScroll function to the scroll event
+    window.addEventListener('scroll', handleScroll);
+
+    // Trigger the handleScroll function on page load
+    window.addEventListener('load', handleScroll);
+  </script>
   <script src="boostrap/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+  
   
 </body>
 

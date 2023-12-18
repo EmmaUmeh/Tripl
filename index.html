@@ -32,15 +32,16 @@
         <a class="navbar-brand" href="#">
           <img src="assets/triplilogo.png" />
         </a>
-        <button class="d-lg-none menubar" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
       </div>
 
-      <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
-
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
         <div class="d-flex justify-content-center justify-content-sm">
           <ul class="navbar-nav mb-2 mb-lg-0 pe-3">
             <li class="nav-item mt-3 mb-3 mt-lg-0 mb-lg-0">

@@ -30,12 +30,30 @@ img {
     width: 100%;
 }
 
+
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+
+  /* width: 0; */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  }
+
+
 .menubar{
     font-size: 35px;
 }
 
 .navbar-brand{
-    width: 15%;
+    width: 13%;
 }
 /* Use a more specific selector to target the button */
 

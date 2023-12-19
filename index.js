@@ -38,3 +38,17 @@ function initMap() {
     });
   }, 2000); // 2000 milliseconds (2 seconds)
 }
+
+
+// Navbar Onscroll
+var prevScroll = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScroll > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    
+  } else {
+    document.getElementById("navbar").style.top = "-90px";
+  }
+  prevScroll = currentScrollPos;
+}

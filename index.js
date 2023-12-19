@@ -48,7 +48,17 @@ var currentScrollPos = window.pageYOffset;
     document.getElementById("navbar").style.top = "0";
     
   } else {
-    document.getElementById("navbar").style.top = "-90px";
+    document.getElementById("navbar").style.top = "-10px";
   }
   prevScroll = currentScrollPos;
 }
+
+
+// function openNav() {
+//   document.getElementById("nav").style.height = "100%";
+// }
+
+// /* Close */
+// function closeNav() {
+//   document.getElementById("nav").style.height = "0%";
+// }

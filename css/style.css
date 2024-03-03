@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
 body{
 
     font-family: Montserrat;
@@ -69,29 +77,52 @@ font-weight: 900;
 
 /* Herosection */
 .herosectionImage {
-    background-size: cover; 
-    background-repeat: no-repeat;
+    /* background-size: cover; 
+    background-repeat: no-repeat; */
     width: 100%;
+    background-color: #122754;
     /* height: 90vh; */
-    background: linear-gradient(91deg, #122754 13.63%, rgba(18, 39, 84, 0.73) 69.27%, rgba(18, 39, 84, 0.00) 120.95%), url('../assets/heroimage.png');
+    /* background: linear-gradient(91deg, #122754 13.63%, rgba(18, 39, 84, 0.73) 69.27%, rgba(18, 39, 84, 0.00) 120.95%), url('../assets/heroimage.png'); */
     margin-bottom: 10px;
     
 }
 
 .herosectionchild{
-    padding: 13rem 5rem 6rem 6rem;
+    padding: 9rem 5rem 6rem 6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .herocontent-headingThree{
-    width: 70%;
-font-size: 80px;
+font-size: 40px;
 font-weight: 900;
 
 }
 
+
+.highlighted-headingThree{
+    font-size: 40px;
+    font-weight: 900;
+    color: #00DB7F;
+   
+    }
+.ourdrive-txt{
+    color: #00DB7F;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .herocontent-ptag{
-    width: 32%;
-    font-weight: 600;
+    width: 65%;
+    font-weight: 500;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .getApp{
@@ -157,11 +188,87 @@ background-color: #00DB7F;
     font-weight: 800;
 }
 
+.earndrive-container{
+    background-image: url("../assets/earndriveImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+
+}
+.earntxt-tag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    padding-bottom: 10px;
+}
+
+.earn-while-drivetxt{
+margin-top: 150px;
+font-weight: 700;
+font-size: 37px;
+}
+
+.earnwhilePtag{
+    text-align: center;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.earnwhilePtag p{
+   
+   
+}
+
+.learn-more{
+border: 1px solid #000000;
+width: 17%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+padding: 5px 4px 5px 4px;
+}
+
+.vector_Img{
+width: 20%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 70px;
+}
+
+.drive-more-txt{
+    font-weight: 600;  
+    color: white;
+    /* fo */
+}
+.ourVision-container{
+    background-color: #122754;
+    padding-top: 30px;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.ourMission-container{
+    background-color: #00DB7F;
+    padding-top: 30px;
+    border-radius: 20px;
+    width: 50%;
+    color: #122754;
+}
+
+/* .corevalues-container{
+
+} */
+
+
 /* About Us */
 
 .aboutus-container{
     padding-top: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .aboutus-text{
@@ -172,7 +279,7 @@ background-color: #00DB7F;
 
 .aboutus-borderline{
 
-    width: 9%;
+    width: 15%;
     height: 7px;
     background: linear-gradient(90deg, #00DB7F 50%, #122754 50%);
     color: white;
@@ -187,54 +294,60 @@ background-color: #00DB7F;
 }
 
 .ourvision-icon{
-    background-color: #00DB7F;
+    /* background-color: #00DB7F; */
     padding: 20px 20px 20px 20px;
     border-radius: 30px;
 width: 30%;
-margin-bottom: 18px;
+margin-bottom: 1px;
 }
 
 
 .ourmission-icon{
-    background-color: #00DB7F;
+    /* background-color: #00DB7F; */
+    
     padding: 20px 20px 20px 20px;
     border-radius: 30px;
 width: 30%;
-margin-bottom: 20px;
+margin-bottom: 2px;
 }
 
 .ourmissiontitle-text{
     color: #122754;
     font-weight: 800;
     font-size: 18px;
+    text-align: center;
 }
 
 .corevalues-icon{
-    background-color: #00DB7F;
+    /* background-color: #00DB7F; */
     padding: 20px 20px 20px 20px;
     border-radius: 30px;
-width: 40%;
-margin-bottom: 20px;
+width: 30%;
+margin-bottom: 2px;
 /* margin-bottom: 18px; */
 }
 
 
 .ourvisionheading-text h2{
-    color: #122754;
+    color: white;
     font-weight: 800;
     font-size: 30px;
 }
 
 
 .ourvisiontitle-text{
-    color: #122754;
+    color: white;
     font-weight: 800;
     font-size: 18px;
     text-align: center;
-
+    width: 90%;
 }
 
-
+.ourmissionheading-text h2{
+    color: #122754;
+    font-weight: 800;
+    font-size: 30px;
+}
 
 .ourvision-paragraph {
     margin-top: 20px;
@@ -242,7 +355,6 @@ margin-bottom: 20px;
  display: flex;
  justify-content: center;
  align-items: center;
-
 }
 
 .ourmission-paragraph{
@@ -258,6 +370,7 @@ margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #122754;
 }
 
 .corevalues-paragraph{
@@ -272,7 +385,8 @@ margin-bottom: 20px;
     width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    color: white; 
 }
 .ourvision-paragraph p{
     width: 80%;
@@ -283,40 +397,49 @@ align-items: center;
 
 
 .sectiondownload{
-    background-color: #122754;
-    color: white;
+    /* background-color: #122754; */
+    color: #000000;
     padding: 40px 5px 5px 5px;
     border-radius: 90px;
     margin-bottom: 50px;
-    margin-top: 190px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
 }
 
 .sectiondownload h2{
     font-weight: 800;
-    width: 90%;
+    width: 60%;
     font-size: 62px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
-.sectiondownload button{
-    border-radius: 50px;
-    background-color: white;
-    padding: 4px 14px 4px 14px;
-    color: #122754;
-    font-weight: 900;
-    font-size: 14px;
+.sectiondownload-button{
+    width: 20%;
+    /* display: flex; */
+
 }
 
 .sectiondownload p{
     font-size: 25px;
 font-weight: 500;
-width: 50%;
+width: 35%;
 line-height: normal;
 margin-bottom: 40px;
 }
 
 .sectiondownloadchild{
     padding-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .sectiondownloadImage{
@@ -333,18 +456,26 @@ margin-bottom: 40px;
 
 .contact-form input{
 
-    background-color: #F5F4F4;
-    border-radius: 20px;
-    padding: 20px 250px 20px 20px;
-    border:  1px solid #F5F4F4;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 200px 10px 20px;
+    width: 100%;
+    border:  1px solid #000000;
 }
 
-
-.contact-form textarea{
-    background-color: #F5F4F4;
+.form-textarea textarea{
+    background-color: white;
     border-radius: 20px;
     padding: 20px 40px 180px 20px;
-    border:  1px solid #F5F4F4;
+    border:  1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.firstName-form{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -365,8 +496,9 @@ border:  1px solid #F5F4F4;
     border-radius: 10px;
     background-color: #00DB7F;
     padding: 12px 12px 12px 12px;
-    color: white;
-    font-weight: 700;  
+    color: #000000;
+    font-weight: 700; 
+    width: 30%; 
 }
 .call_line{
     margin-bottom: 34px;
@@ -388,21 +520,21 @@ padding: 80px 5px 40px 5px;
 }
 
 
-.footerchild{
-/* gap: 900px; */
-display: flex;
+
+.footer-contents{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 80px;
 }
-
-
 .footer-logo{
-    width: 28%;
-    padding-top: 80px;
+    width: 80%;
+    /* padding-top: 80px; */
 }
 
 
 .footer-ptag{
     color: #00DB7F;
-    width: 60%;
+    width: 80%;
 }
 
 
@@ -421,23 +553,34 @@ display: flex;
 
 .footersubscribe{
     display: flex;
-    align-items: center;
-    gap: 90px;
+    flex-direction: column;
+    /* align-items: center; */
+    /* gap: 90px; */
+}
+
+.footer-socialmedia{
+    width: 17%;
+    display: flex;
+    gap: 6px;
+  
 }
 
 
 .subscribe-button{
     border-radius: 10px;
-    background-color: #00DB7F;
+    background-color: white;
     padding: 8px 30px 8px 30px;
-    color: white;
+    color: #000000;
     font-weight: 700;
     margin-top: -30px;
+    width: 50%;
+    margin-bottom: 20px;
+    
 }
 
 .footerchildThree{
     display: flex;
-    gap: 180px;
+    /* gap: 180px; */
 }
 
 #map {
@@ -633,6 +776,48 @@ display: flex;
         flex-direction: column;
         
     }
+
+    .earnwhilePtag{
+        width: 100%;
+    }
+
+    .learn-more{
+        width: 100%;
+    }
+    .ourVision-container{
+        width: 100%;
+    }
+    .ourMission-container{
+        width: 100%;
+    }
+    
+    .sectiondownload-button{
+        width:50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectiondownloadchild{
+        padding-top: 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .firstName-form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .contact-button{
+      
+        width: 100%; 
+    }
+    /* .getIntouch_forms{
+        gap: 20px;
+    } */
  }
 
  /* Meduim Screen */
@@ -687,8 +872,7 @@ display: flex;
         }
     
         .sectiondownloadchild{
-            width: 70%;
-            padding: 10px;
+           
             /* justify-content: center; */
         }
     
@@ -712,6 +896,7 @@ display: flex;
             flex-direction: column;
             gap: 10px;
         }
+        
 
         .call_line{
             width: 50%;
@@ -719,5 +904,23 @@ display: flex;
     
         .mail_box {
             width: 50%;
+        }
+        .ourVision-container{
+            width: 100%;
+        }
+        .ourMission-container{
+            width: 100%;
+        }
+
+        .contact-button{
+      
+            width: 100%; 
+        }
+
+        .firstName-form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
         }
  }

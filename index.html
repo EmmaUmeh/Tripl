@@ -27,7 +27,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="w-full navbar navbar-expand-lg navbar-light bg-white" id="navbar" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+  <nav class="w-20 navbar navbar-expand-lg navbar-light bg-white" id="navbar" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
     <div class="container d-flex justify-content-between align-items-center">
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <a class="navbar-brand" href="#">
@@ -73,35 +73,65 @@
   <div class="herosectionImage mb-5">
 
     <div class="herosectionchild">
-      <h3 class="text-white fw-bolder herocontent-headingThree mb-3 animate__animated animate__backInLeft animate__delay-0.2s">Your Destination, Our Drive!</h3>
+      <!-- animate__animated animate__backInLeft animate__delay-0.2s -->
+      <div>
+        <!-- <h3 class="text-white d-flex  text-nowrap herocontent-headingThree mb-3 ">Your Destination,<h3 class="ourdrive-txt">Our Drive!</h3></h3> -->
+        <span class="text-white text-nowrap  herocontent-headingThree mb-3">Your Destination, </span>
+        <span class=" highlighted-headingThree  text-nowrap  mb-3">Our Drive!</span>
+      </div>
 
       <p class="text-white herocontent-ptag mb-4 animate__animated animate__backInLeft animate__delay-1s">TripLl: Your all-in-one mobility solution. Ride comfortably with
         top-rated drivers or breeze through traffic with our leading scooters.</p>
 
-      <button class="getApp animate__animated animate__backInLeft animate__delay-2s">Get the App</button>
+      <div class="d-flex gap-3">
+        <button class="animate__animated animate__backInUp animate__delay-2s">
+          <img src="./assets/Google Play.png"/>
+        </button>
+        <button class="animate__animated animate__backInUp animate__delay-2s">
+          <img src="./assets/App Store.png"/>
+        </button>
+      </div>
     </div>
   </div>
 
   <!-- Earn while you drive Section-->
   <div class="container mb-5">
+    <!-- initial-state -->
+    <div class="earndrive-container d-flex justify-content-center mb-2 animate__animated animate__backInDown ">
+      <h2 class="earningtext">
+        <!-- <img src="./assets/earndriveImage.png"/> -->
+      </h2>
 
-    <div class="d-flex justify-content-center mb-2 animate__animated animate__backInDown initial-state">
-      <h2 class="earningtext">Earn while you drive</h2>
+      <div class="earntxt-tag">
+        <h3 class="text-white earn-while-drivetxt">Earn while you drive</h3>
+        <h5 class="drive-more-txt">Drive more, earn more</h5>
+      </div>
     </div>
 
-    <!-- This div has a background that is half green and half black -->
-    <div class="d-flex justify-content-center animate__animated animate__backInLeft initial-state">
-      <span class="earn-borderline mb-5"></span>
-    </div>
-
-
-    <div class="earnchildOne ">
-      <div class="earningImage animate__animated animate__backInLeft initial-state">
-        <img src="assets/taxi-driver.png" />
+    <div class="d-flex flex-column justify-content-center w-100 align-items-center">
+      <p class="earnwhilePtag">When you join our platform,  you'll receive numerous ride requests from our customers.</p>
+        <button class="learn-more">Learn More</button>
+   
+        <div class="vector_Img">
+          <img src="./assets/Vector_img.png"/>
+        </div>
       </div>
 
 
-      <div class="animate__animated animate__backInLeft">
+
+    <!-- This div has a background that is half green and half black -->
+    <!-- <div class="d-flex justify-content-center animate__animated animate__backInLeft initial-state">
+      <span class="earn-borderline mb-5"></span>
+    </div> -->
+
+
+    <!-- <div class="earnchildOne ">
+      <div class="earningImage animate__animated animate__backInLeft initial-state">
+        <img src="assets/taxi-driver.png" />
+      </div> -->
+
+
+      <!-- <div class="animate__animated animate__backInLeft">
         <div class="">
           <h3 class="driveEarntext mb-3">Drive and earn money</h3>
 
@@ -138,7 +168,7 @@
           <button class="learnmore">Learn More</button>
         </div>
 
-      </div>
+      </div> -->
 
     </div>
   </div>
@@ -146,19 +176,19 @@
 
   <!--About Us  -->
   <div class="container aboutus-container ">
-    <div class="d-flex justify-content-center animate__animated animate__backInDown initial-state">
+    <!-- <div class="d-flex justify-content-center animate__animated animate__backInDown initial-state">
       <h3 class="aboutus-text ">About Us</h3>
-    </div>
+    </div> -->
 
 
     <!-- This div has a background that is half black and half red -->
-    <div class="d-flex justify-content-center animate__animated animate__backInLeft">
+    <!-- <div class="d-flex justify-content-center animate__animated animate__backInLeft">
       <span class="aboutus-borderline mb-5"></span>
-    </div>
+    </div> -->
 
     <div class="aboutus-missions ">
       <!-- our vision -->
-      <div class="d-flex justify-content-center align-items-center flex-column mt-3">
+      <div class="d-flex justify-content-center align-items-center flex-column mt-3 text-white ourVision-container">
         <div class="ourvision-icon animate__animated animate__backInDown">
           <img src="assets/vision_icon.png" />
         </div>
@@ -191,17 +221,17 @@
       </div>
 
       <!-- our mission -->
-      <div class="d-flex justify-content-center align-items-center flex-column mt-3">
+      <div class="d-flex justify-content-center align-items-center flex-column mt-3 ourMission-container">
 
         <div class="ourmission-icon animate__animated animate__backInDown">
-          <img src="assets/mision_icon.png" />
+          <img src="assets/mission_icon.png" />
         </div>
 
 
         <!-- visonbody -->
         <div class=" animate__animated animate__backInUp">
 
-          <div class="d-flex justify-content-center align-items-center flex-column ourvisionheading-text">
+          <div class="d-flex justify-content-center align-items-center flex-column ourmissionheading-text">
             <h2>Our Mission</h2>
           </div>
 
@@ -226,7 +256,7 @@
 
 
       <!-- core values -->
-      <div class="d-flex justify-content-center align-items-center flex-column mt-5">
+      <div class="d-flex justify-content-center align-items-center flex-column ourVision-container">
 
         <div class="corevalues-icon animate__animated animate__backInDown">
           <img src="assets/core_values_icon.png" />
@@ -263,17 +293,20 @@
     <!-- sectiondownloadApp -->
     <div class="sectiondownload ">
 
-    <div class="container d-flex flex-column flex-md-row align-items-center">
-
+    <div class="container">
+      <!-- d-flex flex-column flex-md-row align-items-center justify-content-center -->
           <div class="sectiondownloadchild initial-state">
               <h2>Seamless Journeys, One Tap Away</h2>
               <p>Compatible with Android and iOS for seamless use.</p>
-              <button>Download App</button>
+              <div class="d-flex align-items-center justify-content-center gap-3 sectiondownload-button">
+                <img src="./assets/Google_PlayBlue.png"/>
+                <img src="./assets/App_StoreGreen.png" />
+              </div>
           </div>
 
-          <div class="sectiondownloadImage animate__animated animate__backInDown initial-state">
+          <!-- <div class="sectiondownloadImage animate__animated animate__backInDown initial-state">
               <img src="assets/triple_holding_phone.png"/>
-          </div>
+          </div> -->
     </div>
 
     </div>
@@ -282,9 +315,9 @@
     <!-- Contact-->
     <div class="contact-container">
         <div class="container">
-              <div class="d-flex justify-content-center animate__animated animate__backInDown">
+              <!-- <div class="d-flex justify-content-center animate__animated animate__backInDown">
                 <h3 class="aboutus-text">Get In Touch</h3>
-              </div>
+              </div> -->
           
           
               <!-- This div has a background that is half black and half red -->
@@ -293,20 +326,36 @@
               </div>
       
             <!--  -->
+             <div class="d-flex  animate__animated animate__backInDown">
+                <h3 class="aboutus-text">Get In Touch</h3>
+              </div>
            <div class="d-flex form-container">
             <div class="animate__animated animate__backInLeft">
               <div class="contact-form d-flex flex-column gap-5">
-                <input type="text" class="form-input" placeholder="First Name Last_Name"/>
-                <input type="text" class="form-input" placeholder="Email Address"/>
+                <div class="d-lg-flex gap-5">
+                  <div class="firstName-form ">
+                    <label class="fw-bold">First and Last Name</label>
+                    <input type="text" class="form-input" placeholder="Type something longer here..."/>
+                  </div>
+                  
+                  <div class="firstName-form">
+                    <label class="fw-bold">Email Address</label>
+                    <input type="text" class="form-input" placeholder="Email Address"/>   
+                  </div>
+                </div>
 
-                <textarea class="form-textarea" placeholder="Your Message"></textarea>
-                <button class="contact-button">Send</button>
+                <div class="form-textarea">
+                  <label class="fw-bold">Your Message</label>
+                  <textarea class="form-textarea" placeholder=""></textarea>
+                </div>
+
+                <button class="contact-button">Subscribe</button>
             </div>
          </div>
 
          <!-- reach out to us icon -->
        
-            <div class="contactside animate__animated animate__backInDown">
+            <!-- <div class="contactside animate__animated animate__backInDown">
 
                     <div class="messageicons_container">
                       <div class="d-flex align-items-center gap-3 call_line">
@@ -324,7 +373,7 @@
                   </div>
 
                   <div id="map"></div>
-            </div>
+            </div> -->
 
          
            </div>
@@ -336,39 +385,48 @@
     <!-- Footer -->
     <div class="footer">
         <div class="container">
-
-          <div class="footerchild">
-            
-            <div class="footerchildTwo">
-              <div class="footer-logo">
-                <img src="assets/tripli_logo_white.png"/>
-            </div>
-
-            <div class="footer-ptag">
-                <p>Revolutionizing Mobility and Community Building</p>
-            </div>
-          </div>
-
+           
             <!--  -->
-            <div class="d-flex flex-column align-items-center footer-contents">
+            <div class="footer-contents">
             
-              <div class="footersubscribe">
-                <div class="footersubscribe-text">
-                  <h2>BE THE FIRST TO KNOW</h2>
-                  <span>Subscribe for our Newsletter</span>
-                </div>
+              <div class="footerchildTwo">
+                <div class="footer-logo">
+                  <img src="assets/tripli_logo_white.png"/>
+              </div>
   
-                <button class="subscribe-button">Subscribe</button>
+              <div class="footer-ptag">
+                  <p>Revolutionizing Mobility and Community Building</p>
               </div>
 
+             
+            </div>
+  
 
-                    <div class="text-white footerchildThree">
-                      
+
+                    
+                      <div class="footersubscribe">
+                        <div class="footersubscribe-text">
+                          <h2 class="text-nowrap">BE THE FIRST TO KNOW</h2>
+                          <span>Subscribe for our Newsletter</span>
+                          
+                        </div>
+          
+                        <button class="subscribe-button">Subscribe</button>
+
+                        <div class="footer-socialmedia">
+                
+                          <img src="./assets/facebook.png"/>
+                          <img src="./assets/instagram.png"/>
+                          <img src="./assets/twitter.png"/>
+                          <img src="./assets/linkedin.png"/>
+        
+                      </div>
+                      </div>
                       <!-- first-content -->
-                          <div class="quicklinks">
-                              <h3 class="fw-bold">QUICK LINKS</h3>
+                          <div class="quicklinks text-white">
+                              <h3 class="fw-bold text-nowrap">QUICK LINKS</h3>
 
-                              <div class="d-flex flex-column fw-bold">
+                              <div class="d-flex flex-column ">
                                 <span>Our Mission</span>
                                 <span>Our Services</span>
                                 <span>Team</span>
@@ -379,22 +437,22 @@
 
                           <!-- secod-content -->
 
-                          <div class="legal">
+                          <div class="legal text-white">
                             <h3 class="fw-bold">Legal</h3>
 
-                            <div class="d-flex flex-column fw-bold">
+                            <div class="d-flex flex-column">
                               <span>Terms Of Service</span>
                               <span>Privacy Policy</span>
                               
                             </div>
                         </div>
                           
-                    </div>
+                    
 
               </div>
-          </div>
+          
 
-          <span class="d-flex justify-content-center align-items-center text-white mt-5 fw-bold">TripLi &copy; 2023 All Rights Reserved.</span>
+          <span class="d-flex justify-content-center align-items-center text-white mt-5 fw-bold">TripLi &copy; <span id="footer-year"></span> All Rights Reserved.</span>
         </div>
     </div>
 
@@ -428,9 +486,13 @@
 
     // Trigger the handleScroll function on page load
     window.addEventListener('load', handleScroll);
+
+    
   </script>
+
+<script src="./js/index.js"></script>
   <script src="boostrap/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="index.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
 
   

@@ -15,84 +15,92 @@
   <link rel="stylesheet" href="boostrap/bootstrap-5.3.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <style>
-    /* Add a class for the initial state of animated elements */
-    .initial-state {
-      opacity: 0;
-      transform: translateY(10px); /* Adjust as needed */
-    }
-  </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="w-20 navbar navbar-expand-lg navbar-light bg-white" id="navbar" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
-    <div class="container d-flex justify-content-between align-items-center">
+<div class="herosectionImage">
+  <nav class="container  navbar-container " id="navbar">
+    <div class="navchild  bg-white p-2">
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <a class="navbar-brand" href="#">
-          <img src="assets/triplilogo.png" />
+          <img src="assets/triplilogo.png" alt="Tripli Logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" id="toggleButton" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="d-flex d-block d-lg-none justify-content-end offcanvas-header">   
-          <!-- <a class="navbar-brand" href="#">
-            <img src="assets/triplilogo.png" />
-          </a>        -->
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="d-flex justify-content-center justify-content-sm">
-          <ul class="navbar-nav mb-2 mb-lg-0 pe-3">
-            <li class="nav-item mt-3 mb-3 mt-lg-0 mb-lg-0">
-              <a class="nav-link nav-linkcolor" aria-current="page" href="#">Home</a>
+  
+      <div id="offcanvasNavbar">
+      
+          <ul class="navlist">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item mb-3 mb-lg-0">
-              <a class="nav-link text-nowrap nav-linkcolor text-sm" href="#">About Us</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
             </li>
-
-            <li class="nav-item mb-3 mb-lg-0">
-              <a class="nav-link nav-linkcolor" href="#">
-                Support
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
             </li>
-            <li class="nav-item mb-3 mb-lg-0">
-              <a class="nav-link nav-linkcolor" href="#">FAQs</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQs</a>
             </li>
           </ul>
-        </div>
+    
+      </div>
+
+      <div class="nav-button">
+        <button type="button" class="" id="closeButton" aria-label="Close"><i class="fa fa-bars"></i></button>
       </div>
     </div>
   </nav>
 
 
   <!-- Herosection-->
-  <div class="herosectionImage mb-5">
-
-    <div class="herosectionchild">
+  <div >
+    <div class="vector_custom_ImgOne">
+      <img src="./assets/Vector_imgOne.png"/>
+    </div>
+    
       <!-- animate__animated animate__backInLeft animate__delay-0.2s -->
-      <div>
-        <!-- <h3 class="text-white d-flex  text-nowrap herocontent-headingThree mb-3 ">Your Destination,<h3 class="ourdrive-txt">Our Drive!</h3></h3> -->
-        <span class="text-white text-nowrap  herocontent-headingThree mb-3">Your Destination, </span>
-        <span class=" highlighted-headingThree  text-nowrap  mb-3">Our Drive!</span>
+      <div class="herosectionchild-content">
+        <div>
+          <!-- <h3 class="text-white d-flex  text-nowrap herocontent-headingThree mb-3 ">Your Destination,<h3 class="ourdrive-txt">Our Drive!</h3></h3> -->
+         <div class="herocontent-firstcontent">
+          <span class="text-white text-nowrap herocontent-headingThree">Your Destination, </span>
+          <span class="highlighted-headingThree  text-nowrap">Our Drive!</span>
+         </div>
+  
+          <!-- Mobile View -->
+          <div class="herocontent-mobile-View">
+            <div class="text-white text-nowrap herocontent-headingThree-mobileview">Your Destination, </div>
+            <div class=" highlighted-headingThree-mobileview  text-nowrap">Our Drive!</div>
+          </div>
+        </div>
+  
+        <p class="text-white herocontent-ptag mb-4 animate__animated animate__backInLeft animate__delay-1s">TripLl: Your all-in-one mobility solution. Ride comfortably with
+          top-rated drivers or breeze through traffic with our leading scooters.</p>
+  
+        <div class="d-flex gap-3">
+          <button class="animate__animated animate__backInUp animate__delay-2s">
+            <img src="./assets/Google Play.png"/>
+          </button>
+          <button class="animate__animated animate__backInUp animate__delay-2s">
+            <img src="./assets/App Store.png"/>
+          </button>
+        </div>
       </div>
+  
 
-      <p class="text-white herocontent-ptag mb-4 animate__animated animate__backInLeft animate__delay-1s">TripLl: Your all-in-one mobility solution. Ride comfortably with
-        top-rated drivers or breeze through traffic with our leading scooters.</p>
 
-      <div class="d-flex gap-3">
-        <button class="animate__animated animate__backInUp animate__delay-2s">
-          <img src="./assets/Google Play.png"/>
-        </button>
-        <button class="animate__animated animate__backInUp animate__delay-2s">
-          <img src="./assets/App Store.png"/>
-        </button>
-      </div>
+
+    <div class="vector_custom_Img">
+      <img src="./assets/Vector_ImgTwo.png"/>
     </div>
   </div>
+</div>
 
   <!-- Earn while you drive Section-->
   <div class="container mb-5">
@@ -324,60 +332,102 @@
               <div class="d-flex justify-content-center animate__animated animate__backInLeft">
                 <span class="aboutus-borderline mb-5"></span>
               </div>
-      
-            <!--  -->
-             <div class="d-flex  animate__animated animate__backInDown">
-                <h3 class="aboutus-text">Get In Touch</h3>
-              </div>
-           <div class="d-flex form-container">
-            <div class="animate__animated animate__backInLeft">
-              <div class="contact-form d-flex flex-column gap-5">
-                <div class="d-lg-flex gap-5">
-                  <div class="firstName-form ">
-                    <label class="fw-bold">First and Last Name</label>
-                    <input type="text" class="form-input" placeholder="Type something longer here..."/>
-                  </div>
-                  
-                  <div class="firstName-form">
-                    <label class="fw-bold">Email Address</label>
-                    <input type="text" class="form-input" placeholder="Email Address"/>   
-                  </div>
-                </div>
 
-                <div class="form-textarea">
-                  <label class="fw-bold">Your Message</label>
-                  <textarea class="form-textarea" placeholder=""></textarea>
-                </div>
-
-                <button class="contact-button">Subscribe</button>
-            </div>
-         </div>
-
-         <!-- reach out to us icon -->
-       
-            <!-- <div class="contactside animate__animated animate__backInDown">
-
-                    <div class="messageicons_container">
-                      <div class="d-flex align-items-center gap-3 call_line">
-                          <img src="assets/call_icon.png"/>
-                        <div class="d-flex flex-md-row flex-column">
-                          <span class="text-nowrap">+234 701 213 2310, </span>
-                          <span class="text-nowrap">+234 806 625 0593</span>
-                        </div>
-                      </div>
-          
-                      <div class="d-flex align-items-center gap-3 mail_box">
-                        <img src="assets/mail_icon.png"/>
-                        <span>Joelderickonos@gmail.com</span>
+              <div class="join-seamless-container">
+                  <div class="join-seamless-child">
+                    <h3 class="fw-bold join-seamless-text">Join the Seamless Train</h3>
+                    <div class="join-seamless-compatible">
+                      <p>
+                        Compatible with Android and iOS for seamless use.
+                      </p>
+                      <button class="join-seamless-button">Download</button>
                     </div>
                   </div>
+              </div>
 
-                  <div id="map"></div>
-            </div> -->
 
-         
-           </div>
+              <div class="section-earndrive-container">
+                <div class="section-earndrive-child">
+                 <div>
+                  <h3 class="fw-bold section-earndrive-text">Earn while you drive</h3>
+                  <p>
+                    When you join our platform,  you'll receive numerous ride requests from our customers.
+                  </p>
+                 </div>
+                  <div class="section-earndrive-learnmore">
+                   
+                    <button class="fw-bold text-nowrap">Learn More</button>
+                  </div>
+                </div>
+            </div>
+
+            
+      
+            <!--  -->
+             
         </div>
+    </div>
+
+    <div class="sectionImage">
+      <div class="section-logo">
+        <img src="./assets/tripli_logo_white.png"/>
+      </div>
+    </div>
+
+    
+    <!-- Get In Touch -->
+    <div class="container mb-5">
+      <div class="d-flex  animate__animated animate__backInDown">
+        <h3 class="aboutus-text">Get In Touch</h3>
+      </div>
+   <div class="d-flex form-container">
+    <div class="animate__animated animate__backInLeft">
+      <div class="contact-form d-flex flex-column gap-5">
+        <div class="d-lg-flex gap-5">
+          <div class="firstName-form ">
+            <label class="fw-bold">First and Last Name</label>
+            <input type="text" class="form-input" placeholder="Type something longer here..."/>
+          </div>
+          
+          <div class="firstName-form">
+            <label class="fw-bold">Email Address</label>
+            <input type="text" class="form-input" placeholder="Email Address"/>   
+          </div>
+        </div>
+
+        <div class="form-textarea">
+          <label class="fw-bold">Your Message</label>
+          <textarea class="form-textarea" placeholder=""></textarea>
+        </div>
+
+        <button class="contact-button">Subscribe</button>
+    </div>
+ </div>
+
+ <!-- reach out to us icon -->
+
+    <!-- <div class="contactside animate__animated animate__backInDown">
+
+            <div class="messageicons_container">
+              <div class="d-flex align-items-center gap-3 call_line">
+                  <img src="assets/call_icon.png"/>
+                <div class="d-flex flex-md-row flex-column">
+                  <span class="text-nowrap">+234 701 213 2310, </span>
+                  <span class="text-nowrap">+234 806 625 0593</span>
+                </div>
+              </div>
+  
+              <div class="d-flex align-items-center gap-3 mail_box">
+                <img src="assets/mail_icon.png"/>
+                <span>Joelderickonos@gmail.com</span>
+            </div>
+          </div>
+
+          <div id="map"></div>
+    </div> -->
+
+ 
+   </div>
     </div>
     
 
@@ -456,39 +506,21 @@
         </div>
     </div>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggleButton");
+    const offcanvasNavbar = document.getElementById("offcanvasNavbar");
+    const closeButton = document.getElementById("closeButton");
 
-  <!-- Bootstrap JS -->
-  <script>
-    // Function to check if an element is in the viewport
-    function isInViewport(element) {
-      var rect = element.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    }
+    toggleButton.addEventListener("click", function () {
+      offcanvasNavbar.classList.toggle("show");
+    });
 
-    // Function to handle scroll events
-    function handleScroll() {
-      var elements = document.querySelectorAll('.initial-state');
-      elements.forEach(function (element) {
-        if (isInViewport(element)) {
-          element.classList.add('animate__animated', 'animate__backInLeft');
-          element.classList.remove('initial-state');
-        }
-      });
-    }
-
-    // Attach the handleScroll function to the scroll event
-    window.addEventListener('scroll', handleScroll);
-
-    // Trigger the handleScroll function on page load
-    window.addEventListener('load', handleScroll);
-
-    
-  </script>
+    closeButton.addEventListener("click", function () {
+      offcanvasNavbar.classList.remove("show");
+    });
+  });
+    </script>
 
 <script src="./js/index.js"></script>
   <script src="boostrap/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>

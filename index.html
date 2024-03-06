@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripLi</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Space+Grotesk:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="font/fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="boostrap/bootstrap-5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TripLi</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="font/fontawesome-free-6.5.1-web/css/all.min.css" />
-  <link rel="stylesheet" href="boostrap/bootstrap-5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
+  <body>
+    <!-- Navbar -->
+    <div class="herosectionImage">
+      <nav class="container navbar-container" id="navbar">
+        <div class="navchild justify-content-between align-items-center d-flex bg-white">
+          <div
+            class=""
+          >
+            <a class="navbar-brand" href="#">
+              <img src="assets/triplilogo.png" alt="Tripli Logo" />
+            </a>
+          </div>
 
-<body>
+          <!-- cont -->
+          <div class="navlist-container">
+            <ul class="navlist">
+              <li class="nav-item">
+                <a class="navlist-nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlist-nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlist-nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlist-nav-link" href="#">FAQs</a>
+              </li>
+            </ul>
+          </div>
 
-  <!-- Navbar -->
-<div class="herosectionImage">
-  <nav class="container  navbar-container " id="navbar">
-    <div class="navchild  bg-white p-2">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-        <a class="navbar-brand" href="#">
-          <img src="assets/triplilogo.png" alt="Tripli Logo" />
-        </a>
-        <button class="navbar-toggler" type="button" id="toggleButton" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-  
-      <div id="offcanvasNavbar">
       
-          <ul class="navlist">
+       <div>
+        <div>
+          <ul class="navlist-mobile" id="offcanvasNavbar">
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
@@ -48,96 +76,126 @@
               <a class="nav-link" href="#">FAQs</a>
             </li>
           </ul>
-    
-      </div>
-
-      <div class="nav-button">
-        <button type="button" class="" id="closeButton" aria-label="Close"><i class="fa fa-bars"></i></button>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- Herosection-->
-  <div >
-    <div class="vector_custom_ImgOne">
-      <img src="./assets/Vector_imgOne.png"/>
-    </div>
-    
-      <!-- animate__animated animate__backInLeft animate__delay-0.2s -->
-      <div class="herosectionchild-content">
-        <div>
-          <!-- <h3 class="text-white d-flex  text-nowrap herocontent-headingThree mb-3 ">Your Destination,<h3 class="ourdrive-txt">Our Drive!</h3></h3> -->
-         <div class="herocontent-firstcontent">
-          <span class="text-white text-nowrap herocontent-headingThree">Your Destination, </span>
-          <span class="highlighted-headingThree  text-nowrap">Our Drive!</span>
-         </div>
-  
-          <!-- Mobile View -->
-          <div class="herocontent-mobile-View">
-            <div class="text-white text-nowrap herocontent-headingThree-mobileview">Your Destination, </div>
-            <div class=" highlighted-headingThree-mobileview  text-nowrap">Our Drive!</div>
-          </div>
         </div>
-  
-        <p class="text-white herocontent-ptag mb-4 animate__animated animate__backInLeft animate__delay-1s">TripLl: Your all-in-one mobility solution. Ride comfortably with
-          top-rated drivers or breeze through traffic with our leading scooters.</p>
-  
-        <div class="d-flex gap-3">
-          <button class="animate__animated animate__backInUp animate__delay-2s">
-            <img src="./assets/Google Play.png"/>
-          </button>
-          <button class="animate__animated animate__backInUp animate__delay-2s">
-            <img src="./assets/App Store.png"/>
-          </button>
-        </div>
-      </div>
-  
+        <div class="nav-button">
+          <!-- Add an id to the close button -->
+<button id="closeButton" style="display: none;">
+<i class="fa fa-Stop" onclick="CloseBtn()"></i>
 
+</button>
 
-
-    <div class="vector_custom_Img">
-      <img src="./assets/Vector_ImgTwo.png"/>
-    </div>
-  </div>
+<!-- Modify the button rendering based on toggle state -->
+<div class="nav-button">
+<button type="button" class="" onclick="toggleMenu()" aria-label="Close">
+    <i id="toggleIcon" class="fa fa-bars"></i>
+    
+</button>
 </div>
 
-  <!-- Earn while you drive Section-->
-  <div class="container mb-5">
-    <!-- initial-state -->
-    <div class="earndrive-container d-flex justify-content-center mb-2 animate__animated animate__backInDown ">
-      <h2 class="earningtext">
-        <!-- <img src="./assets/earndriveImage.png"/> -->
-      </h2>
+        </div>
+       </div>
 
-      <div class="earntxt-tag">
-        <h3 class="text-white earn-while-drivetxt">Earn while you drive</h3>
-        <h5 class="drive-more-txt">Drive more, earn more</h5>
+
+        </div>
+      </nav>
+
+      <!-- Herosection-->
+      <div>
+        <div class="vector_custom_ImgOne">
+          <img src="./assets/Vector_imgOne.png" />
+        </div>
+
+        <!-- animate__animated animate__backInLeft animate__delay-0.2s -->
+        <div class="herosectionchild-content">
+          <div>
+            <!-- <h3 class="text-white d-flex  text-nowrap herocontent-headingThree mb-3 ">Your Destination,<h3 class="ourdrive-txt">Our Drive!</h3></h3> -->
+            <div class="herocontent-firstcontent">
+              <span class="text-white text-nowrap herocontent-headingThree"
+                >Your Destination,
+              </span>
+              <span class="highlighted-headingThree text-nowrap"
+                >Our Drive!</span
+              >
+            </div>
+
+            <!-- Mobile View -->
+            <div class="herocontent-mobile-View">
+              <div
+                class="text-white text-nowrap herocontent-headingThree-mobileview"
+              >
+                Your Destination,
+              </div>
+              <div class="highlighted-headingThree-mobileview text-nowrap">
+                Our Drive!
+              </div>
+            </div>
+          </div>
+          <!-- animate__animated animate__backInLeft animate__delay-1s -->
+          <p class="text-white herocontent-ptag mb-4">
+            TripLl: Your all-in-one mobility solution. Ride comfortably with
+            top-rated drivers or breeze through traffic with our leading
+            scooters.
+          </p>
+
+          <div class="d-flex gap-3">
+            <button
+              class=""
+            >
+              <img src="./assets/Google Play.png" />
+            </button>
+            <button
+              class=""
+            >
+              <img src="./assets/App Store.png" />
+            </button>
+          </div>
+        </div>
+
+        <div class="vector_custom_Img">
+          <img src="./assets/Vector_ImgTwo.png" />
+        </div>
       </div>
     </div>
 
-    <div class="d-flex flex-column justify-content-center w-100 align-items-center">
-      <p class="earnwhilePtag">When you join our platform,  you'll receive numerous ride requests from our customers.</p>
-        <button class="learn-more">Learn More</button>
-   
-        <div class="vector_Img">
-          <img src="./assets/Vector_img.png"/>
+    <!-- Earn while you drive Section-->
+    <div class="container mb-5">
+      <!-- initial-state -->
+      <div
+        class="earndrive-container d-flex justify-content-center mb-2 animate__animated animate__backInDown"
+      >
+        <h2 class="earningtext">
+          <!-- <img src="./assets/earndriveImage.png"/> -->
+        </h2>
+
+        <div class="container earntxt-tag">
+          <h3 class="text-white earn-while-drivetxt ">Earn while you drive</h3>
+          <h5 class="drive-more-txt">Drive more, earn more</h5>
         </div>
       </div>
 
+      <div
+        class="d-flex flex-column justify-content-center w-100 align-items-center"
+      >
+        <p class="earnwhilePtag">
+          When you join our platform, you'll receive numerous ride requests from
+          our customers.
+        </p>
+        <button class="learn-more">Learn More</button>
 
+        <div class="vector_Img">
+          <img src="./assets/Vector_img.png" />
+        </div>
+      </div>
 
-    <!-- This div has a background that is half green and half black -->
-    <!-- <div class="d-flex justify-content-center animate__animated animate__backInLeft initial-state">
+      <!-- This div has a background that is half green and half black -->
+      <!-- <div class="d-flex justify-content-center animate__animated animate__backInLeft initial-state">
       <span class="earn-borderline mb-5"></span>
     </div> -->
 
-
-    <!-- <div class="earnchildOne ">
+      <!-- <div class="earnchildOne ">
       <div class="earningImage animate__animated animate__backInLeft initial-state">
         <img src="assets/taxi-driver.png" />
       </div> -->
-
 
       <!-- <div class="animate__animated animate__backInLeft">
         <div class="">
@@ -177,236 +235,235 @@
         </div>
 
       </div> -->
-
     </div>
-  </div>
 
-
-  <!--About Us  -->
-  <div class="container aboutus-container ">
-    <!-- <div class="d-flex justify-content-center animate__animated animate__backInDown initial-state">
+    <!--About Us  -->
+    <div class="container aboutus-container initial-state">
+      <!-- <div class="d-flex justify-content-center animate__animated animate__backInDown initial-state">
       <h3 class="aboutus-text ">About Us</h3>
     </div> -->
 
-
-    <!-- This div has a background that is half black and half red -->
-    <!-- <div class="d-flex justify-content-center animate__animated animate__backInLeft">
+      <!-- This div has a background that is half black and half red -->
+      <!-- <div class="d-flex justify-content-center animate__animated animate__backInLeft">
       <span class="aboutus-borderline mb-5"></span>
     </div> -->
 
-    <div class="aboutus-missions ">
-      <!-- our vision -->
-      <div class="d-flex justify-content-center align-items-center flex-column mt-3 text-white ourVision-container">
-        <div class="ourvision-icon animate__animated animate__backInDown">
-          <img src="assets/vision_icon.png" />
-        </div>
-
-
-        <!-- visonbody -->
-        <div class="animate__animated animate__backInUp">
-
-          <div class="d-flex justify-content-center align-items-center ourvisionheading-text">
-            <h2>Our Vision</h2>
+      <div class="aboutus-missions">
+        <!-- our vision -->
+        <div
+          class="d-flex justify-content-center align-items-center flex-column mt-3 text-white ourVision-container"
+        >
+          <div class="ourvision-icon animate__animated animate__backInDown">
+            <img src="assets/vision_icon.png" />
           </div>
 
-          <div>
-            <span class="d-flex justify-content-center align-items-center ourvisiontitle-text">A world of extraordinary
-              journeys</span>
-          </div>
+          <!-- visonbody -->
+          <div class="animate__animated animate__backInUp">
+            <div
+              class="d-flex justify-content-center align-items-center ourvisionheading-text"
+            >
+              <h2>Our Vision</h2>
+            </div>
 
+            <div>
+              <span
+                class="d-flex justify-content-center align-items-center ourvisiontitle-text"
+                >A world of extraordinary journeys</span
+              >
+            </div>
 
-          <div class="ourvision-paragraph">
-            <p>
-              Our vision is clear: we aspire to
-              create a world where every
-              trip leaves an indelible mark.
-              We believe in the power of remarkable partnerships and innovation to redefine the way
-              people move and connect.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- our mission -->
-      <div class="d-flex justify-content-center align-items-center flex-column mt-3 ourMission-container">
-
-        <div class="ourmission-icon animate__animated animate__backInDown">
-          <img src="assets/mission_icon.png" />
-        </div>
-
-
-        <!-- visonbody -->
-        <div class=" animate__animated animate__backInUp">
-
-          <div class="d-flex justify-content-center align-items-center flex-column ourmissionheading-text">
-            <h2>Our Mission</h2>
-          </div>
-
-          <div>
-            <span class="d-flex justify-content-center align-items-center ourmissiontitle-text">Redefining mobility
-              and connectivity</span>
-          </div>
-
-
-          <div class="ourmission-paragraph">
-            <p>
-              Our mission is to make every
-              journey extraordinary and
-              every connection remarkable.
-              We're dedicated to developing solutions that enhance the way people travel and interact with
-              their communities.
-            </p>
+            <div class="ourvision-paragraph">
+              <p>
+                Our vision is clear: we aspire to create a world where every
+                trip leaves an indelible mark. We believe in the power of
+                remarkable partnerships and innovation to redefine the way
+                people move and connect.
+              </p>
+            </div>
           </div>
         </div>
 
-      </div>
+        <!-- our mission -->
+        <div
+          class="d-flex justify-content-center align-items-center flex-column mt-3 ourMission-container"
+        >
+          <div class="ourmission-icon animate__animated animate__backInDown">
+            <img src="assets/mission_icon.png" />
+          </div>
 
+          <!-- visonbody -->
+          <div class="animate__animated animate__backInUp">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column ourmissionheading-text"
+            >
+              <h2>Our Mission</h2>
+            </div>
 
-      <!-- core values -->
-      <div class="d-flex justify-content-center align-items-center flex-column ourVision-container">
+            <div>
+              <span
+                class="d-flex justify-content-center align-items-center ourmissiontitle-text"
+                >Redefining mobility and connectivity</span
+              >
+            </div>
 
-        <div class="corevalues-icon animate__animated animate__backInDown">
-          <img src="assets/core_values_icon.png" />
+            <div class="ourmission-paragraph">
+              <p>
+                Our mission is to make every journey extraordinary and every
+                connection remarkable. We're dedicated to developing solutions
+                that enhance the way people travel and interact with their
+                communities.
+              </p>
+            </div>
+          </div>
         </div>
 
-
-        <!-- visonbody -->
-        <div class="d-flex justify-content-center align-items-center flex-column animate__animated animate__backInUp">
-
-          <div class="ourvisionheading-text">
-            <h2>Core Values</h2>
+        <!-- core values -->
+        <div
+          class="d-flex justify-content-center align-items-center flex-column ourVision-container"
+        >
+          <div class="corevalues-icon animate__animated animate__backInDown">
+            <img src="assets/core_values_icon.png" />
           </div>
 
-          <div>
-            <span class="d-flex justify-content-center align-items-center ourvisiontitle-text">Excellence, Innovation, Community</span>
-          </div>
+          <!-- visonbody -->
+          <div
+            class="d-flex justify-content-center align-items-center flex-column animate__animated animate__backInUp"
+          >
+            <div class="ourvisionheading-text">
+              <h2>Core Values</h2>
+            </div>
 
+            <div>
+              <span
+                class="d-flex justify-content-center align-items-center ourvisiontitle-text"
+                >Excellence, Innovation, Community</span
+              >
+            </div>
 
-          <div class="corevalues-paragraph">
-            <p>
-              Our core values drive our commitment to excellence, innovation, and community
-              building. These values
-              underpin every aspect of
-              TripLI's operations.
-            </p>
+            <div class="corevalues-paragraph">
+              <p>
+                Our core values drive our commitment to excellence, innovation,
+                and community building. These values underpin every aspect of
+                TripLI's operations.
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
-
 
     <!-- sectiondownloadApp -->
-    <div class="sectiondownload ">
-
-    <div class="container">
-      <!-- d-flex flex-column flex-md-row align-items-center justify-content-center -->
-          <div class="sectiondownloadchild initial-state">
-              <h2>Seamless Journeys, One Tap Away</h2>
-              <p>Compatible with Android and iOS for seamless use.</p>
-              <div class="d-flex align-items-center justify-content-center gap-3 sectiondownload-button">
-                <img src="./assets/Google_PlayBlue.png"/>
-                <img src="./assets/App_StoreGreen.png" />
-              </div>
+    <div class="sectiondownload">
+      <div class="container">
+        <!-- d-flex flex-column flex-md-row align-items-center justify-content-center -->
+        <div class="sectiondownloadchild initial-state">
+          <h2>Seamless Journeys, One Tap Away</h2>
+          <p>Compatible with Android and iOS for seamless use.</p>
+          <div
+            class="d-flex align-items-center justify-content-center gap-3 sectiondownload-button"
+          >
+            <img src="./assets/Google_PlayBlue.png" />
+            <img src="./assets/App_StoreGreen.png" />
           </div>
+        </div>
 
-          <!-- <div class="sectiondownloadImage animate__animated animate__backInDown initial-state">
+        <!-- <div class="sectiondownloadImage animate__animated animate__backInDown initial-state">
               <img src="assets/triple_holding_phone.png"/>
           </div> -->
+      </div>
     </div>
-
-    </div>
-
 
     <!-- Contact-->
     <div class="contact-container">
-        <div class="container">
-              <!-- <div class="d-flex justify-content-center animate__animated animate__backInDown">
+      <div class="container">
+        <!-- <div class="d-flex justify-content-center animate__animated animate__backInDown">
                 <h3 class="aboutus-text">Get In Touch</h3>
               </div> -->
-          
-          
-              <!-- This div has a background that is half black and half red -->
-              <div class="d-flex justify-content-center animate__animated animate__backInLeft">
-                <span class="aboutus-borderline mb-5"></span>
-              </div>
 
-              <div class="join-seamless-container">
-                  <div class="join-seamless-child">
-                    <h3 class="fw-bold join-seamless-text">Join the Seamless Train</h3>
-                    <div class="join-seamless-compatible">
-                      <p>
-                        Compatible with Android and iOS for seamless use.
-                      </p>
-                      <button class="join-seamless-button">Download</button>
-                    </div>
-                  </div>
-              </div>
-
-
-              <div class="section-earndrive-container">
-                <div class="section-earndrive-child">
-                 <div>
-                  <h3 class="fw-bold section-earndrive-text">Earn while you drive</h3>
-                  <p>
-                    When you join our platform,  you'll receive numerous ride requests from our customers.
-                  </p>
-                 </div>
-                  <div class="section-earndrive-learnmore">
-                   
-                    <button class="fw-bold text-nowrap">Learn More</button>
-                  </div>
-                </div>
-            </div>
-
-            
-      
-            <!--  -->
-             
+        <!-- This div has a background that is half black and half red -->
+        <div
+          class="d-flex justify-content-center animate__animated animate__backInLeft"
+        >
+          <span class="aboutus-borderline mb-5"></span>
         </div>
+
+        <div class="join-seamless-container">
+          <div class="join-seamless-child">
+            <h3 class="fw-bold join-seamless-text">Join the Seamless Train</h3>
+            <div class="join-seamless-compatible">
+              <p>Compatible with Android and iOS for seamless use.</p>
+              <button class="join-seamless-button">Download</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-earndrive-container">
+          <div class="section-earndrive-child">
+            <div>
+              <h3 class="fw-bold section-earndrive-text">
+                Earn while you drive
+              </h3>
+              <p>
+                When you join our platform, you'll receive numerous ride
+                requests from our customers.
+              </p>
+            </div>
+            <div class="section-earndrive-learnmore">
+              <button class="fw-bold text-nowrap">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+      </div>
     </div>
 
     <div class="sectionImage">
       <div class="section-logo">
-        <img src="./assets/tripli_logo_white.png"/>
+        <img src="./assets/tripli_logo_white.png" />
       </div>
     </div>
 
-    
     <!-- Get In Touch -->
     <div class="container mb-5">
-      <div class="d-flex  animate__animated animate__backInDown">
+      <div class="d-flex animate__animated animate__backInDown">
         <h3 class="aboutus-text">Get In Touch</h3>
       </div>
-   <div class="d-flex form-container">
-    <div class="animate__animated animate__backInLeft">
-      <div class="contact-form d-flex flex-column gap-5">
-        <div class="d-lg-flex gap-5">
-          <div class="firstName-form ">
-            <label class="fw-bold">First and Last Name</label>
-            <input type="text" class="form-input" placeholder="Type something longer here..."/>
-          </div>
-          
-          <div class="firstName-form">
-            <label class="fw-bold">Email Address</label>
-            <input type="text" class="form-input" placeholder="Email Address"/>   
+      <div class="d-flex form-container">
+        <div class="animate__animated animate__backInLeft">
+          <div class="contact-form d-flex flex-column gap-5">
+            <div class="d-lg-flex gap-5">
+              <div class="firstName-form">
+                <label class="fw-bold">First and Last Name</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Type something longer here..."
+                />
+              </div>
+
+              <div class="firstName-form">
+                <label class="fw-bold">Email Address</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Email Address"
+                />
+              </div>
+            </div>
+
+            <div class="form-textarea">
+              <label class="fw-bold">Your Message</label>
+              <textarea class="form-textarea" placeholder=""></textarea>
+            </div>
+
+            <button class="contact-button">Subscribe</button>
           </div>
         </div>
 
-        <div class="form-textarea">
-          <label class="fw-bold">Your Message</label>
-          <textarea class="form-textarea" placeholder=""></textarea>
-        </div>
+        <!-- reach out to us icon -->
 
-        <button class="contact-button">Subscribe</button>
-    </div>
- </div>
-
- <!-- reach out to us icon -->
-
-    <!-- <div class="contactside animate__animated animate__backInDown">
+        <!-- <div class="contactside animate__animated animate__backInDown">
 
             <div class="messageicons_container">
               <div class="d-flex align-items-center gap-3 call_line">
@@ -425,110 +482,127 @@
 
           <div id="map"></div>
     </div> -->
-
- 
-   </div>
+      </div>
     </div>
-    
-
 
     <!-- Footer -->
     <div class="footer">
-        <div class="container">
-           
-            <!--  -->
-            <div class="footer-contents">
-            
-              <div class="footerchildTwo">
-                <div class="footer-logo">
-                  <img src="assets/tripli_logo_white.png"/>
-              </div>
-  
-              <div class="footer-ptag">
-                  <p>Revolutionizing Mobility and Community Building</p>
-              </div>
-
-             
+      <div class="container">
+        <!--  -->
+        <div class="footer-contents">
+          <div class="footerchildTwo">
+            <div class="footer-logo">
+              <img src="assets/tripli_logo_white.png" />
             </div>
-  
 
+            <div class="footer-ptag">
+              <p>Revolutionizing Mobility and Community Building</p>
+            </div>
+          </div>
 
-                    
-                      <div class="footersubscribe">
-                        <div class="footersubscribe-text">
-                          <h2 class="text-nowrap">BE THE FIRST TO KNOW</h2>
-                          <span>Subscribe for our Newsletter</span>
-                          
-                        </div>
-          
-                        <button class="subscribe-button">Subscribe</button>
+          <div class="footersubscribe">
+            <div class="footersubscribe-text">
+              <h2 class="text-nowrap">BE THE FIRST TO KNOW</h2>
+              <span>Subscribe for our Newsletter</span>
+            </div>
 
-                        <div class="footer-socialmedia">
-                
-                          <img src="./assets/facebook.png"/>
-                          <img src="./assets/instagram.png"/>
-                          <img src="./assets/twitter.png"/>
-                          <img src="./assets/linkedin.png"/>
-        
-                      </div>
-                      </div>
-                      <!-- first-content -->
-                          <div class="quicklinks text-white">
-                              <h3 class="fw-bold text-nowrap">QUICK LINKS</h3>
+            <button class="subscribe-button">Subscribe</button>
 
-                              <div class="d-flex flex-column ">
-                                <span>Our Mission</span>
-                                <span>Our Services</span>
-                                <span>Team</span>
-                                <span>Blog</span>
-                                <span>Contact Us</span>
-                              </div>
-                          </div>
+            <div class="footer-socialmedia">
+              <img src="./assets/facebook.png" />
+              <img src="./assets/instagram.png" />
+              <img src="./assets/twitter.png" />
+              <img src="./assets/linkedin.png" />
+            </div>
+          </div>
+          <!-- first-content -->
+          <div class="quicklinks text-white">
+            <h3 class="fw-bold text-nowrap">QUICK LINKS</h3>
 
-                          <!-- secod-content -->
+            <div class="d-flex flex-column">
+              <span>Our Mission</span>
+              <span>Our Services</span>
+              <span>Team</span>
+              <span>Blog</span>
+              <span>Contact Us</span>
+            </div>
+          </div>
 
-                          <div class="legal text-white">
-                            <h3 class="fw-bold">Legal</h3>
+          <!-- secod-content -->
 
-                            <div class="d-flex flex-column">
-                              <span>Terms Of Service</span>
-                              <span>Privacy Policy</span>
-                              
-                            </div>
-                        </div>
-                          
-                    
+          <div class="legal text-white">
+            <h3 class="fw-bold">Legal</h3>
 
-              </div>
-          
-
-          <span class="d-flex justify-content-center align-items-center text-white mt-5 fw-bold">TripLi &copy; <span id="footer-year"></span> All Rights Reserved.</span>
+            <div class="d-flex flex-column">
+              <span>Terms Of Service</span>
+              <span>Privacy Policy</span>
+            </div>
+          </div>
         </div>
+
+        <span
+          class="d-flex justify-content-center align-items-center text-white mt-5 fw-bold"
+          >TripLi &copy; <span id="footer-year"></span> All Rights
+          Reserved.</span
+        >
+      </div>
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggleButton");
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const toggleButton = document.getElementById("toggleButton");
+      //   const offcanvasNavbar = document.getElementById("offcanvasNavbar");
+      //   const closeButton = document.getElementById("closeButton");
+
+      //   toggleButton.addEventListener("click", function () {
+      //     offcanvasNavbar.classList.toggle("show");
+      //   });
+
+      //   closeButton.addEventListener("click", function () {
+      //     offcanvasNavbar.classList.remove("show");
+      //   });
+      // });
+
+      // function OpenToggle() {
+      //   const toggleButton = document.getElementById("offcanvasNavbar").style.display = "block"
+      //   const toggleButtonWidth = document.getElementById("offcanvasNavbar").style.width = "100%"
+      // }
+
+      // function CloseBtn() {
+      //   const CloseBtn = document.getElementById("offcanvasNavbar").style.display = "none"
+      //   // const toggleButtonWidth = document.getElementById("offcanvasNavbar").style.width = "100%"
+      // }
+      let toggle = false;
+
+function toggleMenu() {
     const offcanvasNavbar = document.getElementById("offcanvasNavbar");
     const closeButton = document.getElementById("closeButton");
+    const toggleIcon = document.getElementById("toggleIcon");
 
-    toggleButton.addEventListener("click", function () {
-      offcanvasNavbar.classList.toggle("show");
-    });
+    if (toggle) {
+        // Close the menu
+        offcanvasNavbar.style.display = "none";
+        
+        closeButton.style.display = "none";
+        toggleIcon.classList.remove("fa-times");
+        toggleIcon.classList.add("fa-bars");
+    } else {
+        // Open the menu
+        offcanvasNavbar.style.display = "block";
+        offcanvasNavbar.style.width = "100%"
+        closeButton.style.display = "block";
+        toggleIcon.classList.remove("fa-bars");
+        toggleIcon.classList.add("fa-times");
+    }
 
-    closeButton.addEventListener("click", function () {
-      offcanvasNavbar.classList.remove("show");
-    });
-  });
+    toggle = !toggle; // Toggle the state
+}
+
     </script>
 
-<script src="./js/index.js"></script>
-  <script src="boostrap/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="boostrap/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-
-  
-  
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  </body>
 </html>

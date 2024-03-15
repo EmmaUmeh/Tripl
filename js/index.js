@@ -66,12 +66,20 @@ function isInViewport(element) {
 // Function to handle scroll events
 function handleScroll() {
   var elements = document.querySelectorAll('.initial-state');
+  var elementsUp = document.querySelectorAll('.initial-stateUp');
   elements.forEach(function (element) {
     if (isInViewport(element)) {
       element.classList.add('animate__animated', 'animate__backInLeft');
       element.classList.remove('initial-state');
     }
   });
+
+  elementsUp.forEach(function (element) {
+    if (isInViewport(element)) {
+      element.classList.add('animate__animated', 'animate__backInUp');
+      element.classList.remove('initial-stateUp');
+    }
+  })
 }
 
 // Attach the handleScroll function to the scroll event
@@ -91,6 +99,26 @@ function FooterDate() {
 FooterDate();
 
 
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 
 
 // function openNav() {

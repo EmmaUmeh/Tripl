@@ -1384,6 +1384,9 @@ border-top-left-radius: 25px;
     display: flex;
     justify-content: center;
     }
+    .mySlides img{
+        height: 40vh;
+    }
 
     .first-slide-containerTwo button{
         display: none;
@@ -1417,6 +1420,10 @@ border-top-left-radius: 25px;
         text-align: center;
         display: flex;
         justify-content: center;
+        }
+
+        .second-create-text{
+            display: none;
         }
     
         .second-slide-containerTwo button{

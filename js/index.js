@@ -121,6 +121,32 @@ function showSlides() {
 }
 
 
+
+let toggle = false;
+
+function toggleMenu() {
+    const offcanvasNavbar = document.getElementById("offcanvasNavbar");
+    const closeButton = document.getElementById("closeButton");
+    const toggleIcon = document.getElementById("toggleIcon");
+
+    if (toggle) {
+        // Close the menu
+        offcanvasNavbar.style.display = "none";
+        
+        closeButton.style.display = "none";
+        toggleIcon.classList.remove("fa-times");
+        toggleIcon.classList.add("fa-bars");
+    } else {
+        // Open the menu
+        offcanvasNavbar.style.display = "block";
+        offcanvasNavbar.style.width = "100%"
+        closeButton.style.display = "block";
+        toggleIcon.classList.remove("fa-bars");
+        toggleIcon.classList.add("fa-times");
+    }
+
+    toggle = !toggle; // Toggle the state
+}
 // function openNav() {
 //   document.getElementById("nav").style.height = "100%";
 // }
